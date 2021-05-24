@@ -2,6 +2,7 @@
 This website gives you the possibily to see all departments of the university. Through this web-site you can see one description for each department, you can add the departments to your favourite list and through the button "search" you can filter the departments.
 
 ## Visuals
-![1](https://user-images.githubusercontent.com/79788833/114170394-2f3f6e00-9933-11eb-9273-5f9ca181271b.JPG)
-![2](https://user-images.githubusercontent.com/79788833/114170395-2fd80480-9933-11eb-8f69-f5be1ea25bce.JPG)
-![3](https://user-images.githubusercontent.com/79788833/114170401-31093180-9933-11eb-94bb-9401b5d4eab7.JPG)
+![Dipartimenti1](https://user-images.githubusercontent.com/79788833/119338254-0fb89680-bc90-11eb-9d04-63c025427d91.JPG)
+![Dipartimenti2](https://user-images.githubusercontent.com/79788833/119338257-0fb89680-bc90-11eb-96d3-746668b98b7d.JPG)
+![Dipartimenti3](https://user-images.githubusercontent.com/79788833/119338252-0f200000-bc90-11eb-8c2c-bd36e1546d07.JPG)
+
