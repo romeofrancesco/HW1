@@ -1,4 +1,4 @@
-### Professor's personal area
+### Tutor's personal area
 In this area the professor can see your personal data, you can change your password, you can see all subjects you teach.
 
 ## Visuals
