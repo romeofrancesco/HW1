@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 24, 2021 alle 21:42
+-- Creato il: Mag 24, 2021 alle 21:57
 -- Versione del server: 10.4.18-MariaDB
 -- Versione PHP: 7.3.28
 
@@ -42,8 +42,9 @@ CREATE TABLE `commento` (
 --
 
 INSERT INTO `commento` (`ID`, `Post_ID`, `CF`, `Nome`, `Cognome`, `text`, `datacommento`) VALUES
-(1, 1, 'ZCCLRT99M30A494R', 'Alberto', 'Zacco', 'Si trova al primo piano dell\'edificio didattica', '2021-05-24 21:38:53'),
-(2, 2, 'CCCRZC65C312CR12', 'Giovanni', 'Regalbuto', 'Le lezioni riprenderanno il 04/05', '2021-05-24 21:40:53');
+(1, 1, 'ZCCLRT99M30A494R', 'Alberto', 'Ragaglia', 'Primo piano dell\'edificio Didattica alla cittadella', '2021-05-24 21:53:25'),
+(2, 2, 'CCCRZC65C312CR12', 'Giovanni', 'Regalbuto', 'Le lezioni riprenderanno giorno 04-05', '2021-05-24 21:54:25'),
+(3, 1, 'CCCBCD567YUIOL34', 'Carlo', 'Bonifacio', 'Esatto, vicino il polifunzionale', '2021-05-24 21:56:57');
 
 -- --------------------------------------------------------
 
@@ -267,7 +268,9 @@ CREATE TABLE `mipiace` (
 --
 
 INSERT INTO `mipiace` (`Post_ID`, `CF`) VALUES
+(1, 'CCCBCD567YUIOL34'),
 (1, 'ZCCLRT99M30A494R'),
+(2, 'CCCBCD567YUIOL34'),
 (2, 'CCCRZC65C312CR12'),
 (2, 'RMOFNC99S02C351P');
 
@@ -314,8 +317,8 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`ID`, `Titolo`, `text`, `CF`, `Nome`, `Cognome`, `datapost`) VALUES
-(1, 'Aiuto aule', 'Salve a tutti, qualcuno potrebbe dirmi dove si trova la D14?', 'RMOFNC99S02C351P', 'Francesco', 'Romeo', '2021-05-24'),
-(2, 'Pausa didattia', 'Ciao a tutti, qualcuno saprebbe dirmi quando ricominciano le lezioni?', 'ZCCLRT99M30A494R', 'Alberto', 'Zacco', '2021-05-24');
+(1, 'Richiesta aula', 'Salve a tutti, qualcuno saprebbe dirmi dove si trova la D14?', 'RMOFNC99S02C351P', 'Francesco', 'Romeo', '2021-05-24'),
+(2, 'Pausa didattica', 'Ciao a tutti, qualcuno potrebbe dirmi quando ricominciano le lezioni?', 'ZCCLRT99M30A494R', 'Alberto', 'Ragaglia', '2021-05-24');
 
 -- --------------------------------------------------------
 
@@ -367,8 +370,8 @@ CREATE TABLE `studente` (
 --
 
 INSERT INTO `studente` (`Matricola`, `Nome`, `Cognome`, `CF`, `Data_di_nascita`, `Età`, `Citta_di_nascita`, `Email`, `password`, `Tipo`, `Codice_CDL`) VALUES
-(1, 'Francesco', 'Romeo', 'RMOFNC99S02C351P', '1999-11-02', 21, 'Catania', 'fraromeo69@gmail.com', '$2y$10$V/qz7OjCWo0vJdzgE7paJuQfd.z7h5KWUc0VmBxFsFjXUMHotQbWi', 'Regolare', 1),
-(2, 'Alberto', 'Zacco', 'ZCCLRT99M30A494R', '1999-08-30', 21, 'Augusta', 'albertozacco02@gmail.com', '$2y$10$aITX2zEx1x0ddVHceBeLDeQaPnIWC6CaL0GfKqYoobCAJE2PhfTZ2', 'Regolare', 1);
+(1, 'Francesco', 'Romeo', 'RMOFNC99S02C351P', '1999-11-02', 21, 'Catania', 'fraromeo69@gmail.com', '$2y$10$3yead49DcWTViX.EKT0xYep/eMcRD8v4I6RoZ37DddvqglgrHHo92', 'Regolare', 1),
+(2, 'Alberto', 'Ragaglia', 'ZCCLRT99M30A494R', '1999-08-30', 21, 'Augusta', 'albertoraghi02@gmail.com', '$2y$10$0uIwB1LocD8HFoPg/fOvK.1MG5L5Td6u7ZEJIazGyu7o5YlVqlhWC', 'Regolare', 1);
 
 -- --------------------------------------------------------
 
@@ -517,7 +520,7 @@ ALTER TABLE `tutor`
 -- AUTO_INCREMENT per la tabella `commento`
 --
 ALTER TABLE `commento`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT per la tabella `esame`
