@@ -1,5 +1,5 @@
 ### Student's personal area
-In this area the professor can see your personal data, you can change your password, you can see all subjects in your degree course and you can see all exams you took.
+In this area the professor can see your personal data, you can update your password, you can see all subjects in your degree course and you can see all exams you took.
 
 ## Visuals
 ![Studente1](https://user-images.githubusercontent.com/79788833/119336167-93bd4f00-bc8d-11eb-9bed-bd0f5e8bfc13.JPG)
