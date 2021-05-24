@@ -1,4 +1,4 @@
-### Professor's personal area
+### Departments
 This website gives you the possibily to see all departments of the university. Through this web-site you can see one description for each department, you can add the departments to your favourite list and through the button "search" you can filter the departments.
 
 ## Visuals
