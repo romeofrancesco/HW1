@@ -1,5 +1,5 @@
 ### Professor's personal area
-In this area the professor can see your personal data, you update change your password, you can see all subjects you teach and you can upload a result of an exam.
+In this area you can see your personal data, you update change your password, you can see all subjects you teach and you can upload a result of an exam.
 
 ## Visuals
 ![Docente1](https://user-images.githubusercontent.com/79788833/119335678-fcf09280-bc8c-11eb-9452-27eaa0f8c64a.JPG)
