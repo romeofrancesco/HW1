@@ -12,6 +12,60 @@ body{
 .hidden{
     display: none;
 }
+.visualizza_punti{
+    height:100vh;
+    width: 100vw;
+    background-color:rgba(146, 160, 166 , 1);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+}
+.container{
+    margin: 0 50px;
+    width: fit-content;
+    height: auto;
+  }
+  .container .punto{
+    height: 12px;
+    width: 12px;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50px;
+  }
+  .container:nth-child(1) .punto {
+    animation: dotLoaders 1.5s linear infinite forwards;
+  }
+  #punto1 {
+    animation-delay: 0.25s;
+  }
+  #punto2 {
+    animation-delay: 0.5s;
+  }
+  #punto3 {
+    animation-delay: 0.75s;
+  }
+  @keyframes dotLoaders {
+    0% {
+      background-color: rgba(255, 255, 255, 0.137);
+      transform: scale(0.8);
+    }
+    50% {
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.5);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.137);
+      transform: scale(0.8);
+    }
+  }
+  .no-scroll{
+    overflow: hidden;
+}
 
 /*Header*/
 header{
