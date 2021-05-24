@@ -1,4 +1,4 @@
-### Professor's personal area
+### Student's personal area
 In this area the professor can see your personal data, you can change your password, you can see all subjects in your degree course and you can see all exams you took.
 
 ## Visuals
