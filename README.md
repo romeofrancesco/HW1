@@ -1,4 +1,4 @@
-### MHW3: API REST in Javascript
+### HW1: Entire website
 The HW1 represents the entire website, the website is divided into two parts, one is dedicated to visitors and the other one is dedicated to users(students , tutors and teachers).
 
 ## Disposal
