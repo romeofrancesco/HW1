@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 24, 2021 alle 19:16
+-- Creato il: Mag 24, 2021 alle 21:42
 -- Versione del server: 10.4.18-MariaDB
 -- Versione PHP: 7.3.28
 
@@ -36,6 +36,14 @@ CREATE TABLE `commento` (
   `text` varchar(510) DEFAULT NULL,
   `datacommento` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `commento`
+--
+
+INSERT INTO `commento` (`ID`, `Post_ID`, `CF`, `Nome`, `Cognome`, `text`, `datacommento`) VALUES
+(1, 1, 'ZCCLRT99M30A494R', 'Alberto', 'Zacco', 'Si trova al primo piano dell\'edificio didattica', '2021-05-24 21:38:53'),
+(2, 2, 'CCCRZC65C312CR12', 'Giovanni', 'Regalbuto', 'Le lezioni riprenderanno il 04/05', '2021-05-24 21:40:53');
 
 -- --------------------------------------------------------
 
@@ -254,6 +262,15 @@ CREATE TABLE `mipiace` (
   `CF` char(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dump dei dati per la tabella `mipiace`
+--
+
+INSERT INTO `mipiace` (`Post_ID`, `CF`) VALUES
+(1, 'ZCCLRT99M30A494R'),
+(2, 'CCCRZC65C312CR12'),
+(2, 'RMOFNC99S02C351P');
+
 -- --------------------------------------------------------
 
 --
@@ -291,6 +308,14 @@ CREATE TABLE `post` (
   `Cognome` varchar(255) DEFAULT NULL,
   `datapost` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `post`
+--
+
+INSERT INTO `post` (`ID`, `Titolo`, `text`, `CF`, `Nome`, `Cognome`, `datapost`) VALUES
+(1, 'Aiuto aule', 'Salve a tutti, qualcuno potrebbe dirmi dove si trova la D14?', 'RMOFNC99S02C351P', 'Francesco', 'Romeo', '2021-05-24'),
+(2, 'Pausa didattia', 'Ciao a tutti, qualcuno saprebbe dirmi quando ricominciano le lezioni?', 'ZCCLRT99M30A494R', 'Alberto', 'Zacco', '2021-05-24');
 
 -- --------------------------------------------------------
 
@@ -336,6 +361,14 @@ CREATE TABLE `studente` (
   `Tipo` varchar(255) DEFAULT NULL,
   `Codice_CDL` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `studente`
+--
+
+INSERT INTO `studente` (`Matricola`, `Nome`, `Cognome`, `CF`, `Data_di_nascita`, `Età`, `Citta_di_nascita`, `Email`, `password`, `Tipo`, `Codice_CDL`) VALUES
+(1, 'Francesco', 'Romeo', 'RMOFNC99S02C351P', '1999-11-02', 21, 'Catania', 'fraromeo69@gmail.com', '$2y$10$V/qz7OjCWo0vJdzgE7paJuQfd.z7h5KWUc0VmBxFsFjXUMHotQbWi', 'Regolare', 1),
+(2, 'Alberto', 'Zacco', 'ZCCLRT99M30A494R', '1999-08-30', 21, 'Augusta', 'albertozacco02@gmail.com', '$2y$10$aITX2zEx1x0ddVHceBeLDeQaPnIWC6CaL0GfKqYoobCAJE2PhfTZ2', 'Regolare', 1);
 
 -- --------------------------------------------------------
 
@@ -484,7 +517,7 @@ ALTER TABLE `tutor`
 -- AUTO_INCREMENT per la tabella `commento`
 --
 ALTER TABLE `commento`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT per la tabella `esame`
@@ -508,13 +541,13 @@ ALTER TABLE `notizie`
 -- AUTO_INCREMENT per la tabella `post`
 --
 ALTER TABLE `post`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT per la tabella `studente`
 --
 ALTER TABLE `studente`
-  MODIFY `Matricola` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Matricola` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Limiti per le tabelle scaricate
