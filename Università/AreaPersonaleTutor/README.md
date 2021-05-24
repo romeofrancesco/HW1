@@ -1,5 +1,5 @@
 ### Tutor's personal area
-In this area the professor can see your personal data, you can change your password, you can see all subjects you teach.
+In this area the professor can see your personal data, you can update your password, you can see all subjects you teach.
 
 ## Visuals
 ![Tutor1](https://user-images.githubusercontent.com/79788833/119336335-d67f2700-bc8d-11eb-9a37-1a2d7679482e.JPG)
