@@ -1,0 +1,398 @@
+body{
+    margin: 0px;
+}
+.hidden{
+    display: none !important;
+}
+.error{
+    color: red;
+}
+.ok{
+    color: green;
+}
+.no-post , .no-commenti{
+    font-weight: bolder;
+}
+button{
+    cursor: pointer;
+}
+/*MODALE*/
+.visualizza{
+    height:100vh;
+    width: 100vw;
+    background-color:rgba(146, 160, 166 , 0.7);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+}
+.Elimina{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5%;
+}
+.scelta{
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.scelta strong{
+    font-size: 1.5rem;
+}
+.scelta button{
+    width: 4vw;
+    border-radius: 10px;
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    height: 20vh;
+    background-color:#92A0A6;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+  }
+#menu {
+    display: none;
+  }
+#Logo img{
+    height: 10vh;
+}
+#Logo{
+    margin-top: 1vh;   
+    margin-left: 1vw; 
+}
+#links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#links{
+    margin-top: 2vh;   
+    margin-right: 2vw;
+}
+#links a:hover{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+#Principale{
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#CreaPost , #CaricaPost{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+}
+#CreaPost {
+    margin-top: 2vh;
+}
+.Contenitore{
+    height: 45vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    background-color:rgba(146, 160, 166 , 0.3);
+    position: relative;
+}
+.area{
+    height: 10vh;
+    width: 20vw;
+    resize: none;
+    min-height: 10vh;
+}
+.Button{
+    width: 8vw;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+.Button_img{
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+}
+.Contenitore strong{
+    font-size: 2rem;
+}
+.Contenitore em{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 1vh;
+}
+.Contenitore i{
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-bottom: 1vh;
+    border-bottom: 1px solid black;
+}
+#Testo{
+    width: 90%;
+    height: 55%;
+    border-radius: 10px;
+}
+#Carica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Carica input{
+    height: 10%;
+    width: 40%;
+    border-radius: 10px;
+}
+.commenti{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Button_commento{
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+}
+.comment{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 3%;
+}
+.comment em{
+    width: 100%;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+.comment strong{
+    font-size: 1rem;
+}
+.comment p{
+    font-size: 0.8rem;
+}
+.like{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.like img{
+    height: 27px;
+    cursor: pointer;
+    margin-right: 0.5vw;
+}
+/*Footer*/
+
+
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    #links{
+        display: none;
+    }
+    #menu {
+        display: block;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+      }
+    header #Principale{
+        font-size: 2.5rem;
+    }
+}
+/*Section*/
+@media(max-width: 1200px){
+    .Button{
+        width: 10vw;
+    }
+    .Contenitore{
+        width: 40vw;
+        max-height: 50vh;
+    }
+    .Button_img{
+        top: 0.5vh;
+        right: 1.5vw;
+    }
+    .Contenitore strong{
+        font-size: 1.5rem;
+    }
+    #Testo{
+        width: 80%;
+        height: 60%;
+    }#Carica input{
+        width: 60%;
+    }
+    #CreaPost , #CaricaPost{
+        width: 15vw;
+    }
+    .comment strong{
+        font-size: 0.9rem;
+    }
+    .comment p{
+        font-size: 0.7rem;
+    }
+}
+/*MODALE*/
+@media(max-width: 1200px){
+    .Elimina{
+        width: 35vw;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    header #Logo img{
+        height: 8vh;
+    }
+    header #Principale{
+        font-size: 1.5rem;
+    }
+    #CreaPost , #CaricaPost{
+        width: 20vw;
+    }
+    .Contenitore{
+        height: 60vh;
+        width: 70vw;
+        max-height: 60vh;
+        min-height: 60vh;
+    }
+    .area{
+        height: 20vh;
+        width: 40vw;
+    }
+    .Button{
+        width: 20vw;
+    }
+    .Button_img{
+        height: 15px;
+        top: 0.5vh;
+        right: 2vw;
+    }
+    .Contenitore strong{
+        font-size: 1.3rem;
+    }
+    .Contenitore p{
+        font-size: 0.8;
+    }
+    .Contenitore em{
+        font-size: 0.7rem;
+    }
+    .Contenitore i{
+        font-size: 0.6rem;
+    }
+    #Testo{
+        width: 90%;
+        height: 40%;
+    }#Carica input{
+        width: 80%;
+    }
+    #CreaPost , #CaricaPost{
+        width: 30vw;
+    }
+    .comment em{
+        font-size: 0.5rem;
+    }
+    .comment strong{
+        font-size: 0.8rem;
+    }
+    .comment p{
+        font-size: 0.6rem;
+    }
+    section .Elimina{
+        width: 60vw;
+    }
+    .scelta{
+        width: 20vw;
+    }
+    .scelta button{
+        width: 8vw;
+    }
+    .like img{
+        height: 17px;
+    }
+ 
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    header #Logo img{
+        height: 6vh;
+    }
+    header #Principale{
+        font-size: 1.2rem;
+    }
+    .Button{
+        width: 40vw;
+        font-size: 0.8rem;
+    }
+    #CreaPost , #CaricaPost{
+        width: 40vw;
+        font-size: 0.8rem;
+    }
+    .scelta button{
+        margin-top: 1vh;
+        width: 10vw;
+    }
+
+}

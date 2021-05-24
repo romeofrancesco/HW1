@@ -1,0 +1,231 @@
+body{
+    margin:0px;
+}
+.error{
+    color: red;
+    border-color: red;
+}
+
+/*Header*/
+header{
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    height: 10vh;
+    background-color:#92A0A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 10vh;
+    width: 5vw;
+    margin-left: 1vw;
+}
+#link{
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+#link a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+#link a:hover{
+    font-weight: bolder;
+}
+
+/*Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+#Foto{
+    height: 70vh;
+    width: 80vw;
+    background-image: url("../Foto/Sfondo.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#Foto::before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(0, 0, 0 , 0.5);
+}
+strong{
+    font-size: 3rem;
+    z-index: 1;
+}
+#Contenitore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3%;
+    background-color: rgba(255, 255, 255 , 0.8);
+    z-index: 1;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 30vw;
+    margin-bottom: 1vh;
+}
+input{
+    border:1px solid black;
+    border-radius: 15px;
+    width: 10vw;
+}
+input:focus{
+    outline: none;
+}
+p{
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bolder;
+}
+#CDL{
+    width: 10vw;
+}
+#submit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+/*Footer*/
+
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    header{
+        font-size: 2rem;
+    }
+    header img{
+        width: 12vw;
+    }
+    #link{
+        width: 12vw;
+    }
+    #link a{
+        margin-right: 0vw;
+    }
+}
+
+/*Section*/
+@media(max-width: 1200px){
+    #Foto{
+        height: 50vh;
+        width: 80vw;
+    }
+    strong{
+        font-size: 2rem;
+    }
+    .label{
+        width: 40vw;
+    }
+    input{
+        width: 15vw;
+    }    
+
+}
+
+/*Footer*/
+@media(max-width: 1200px){
+
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Header*/
+    header{
+        height: 10vh;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    header img{
+        height: 10vh;
+        width: 10vh;
+    }
+    #link{
+        height: 10vh;
+        width: 10vh;
+    }
+    #link a{
+        margin-left: 2vw;
+        font-size: 0.7rem;
+    }
+    /*Section*/
+    #Foto{
+        height: 60vh;
+        width: 90vw;
+    }
+    strong{
+        font-size: 1.5rem;
+    }
+    .label{
+        width: 65vw;
+        font-size: 0.7rem;
+    }
+    input{
+        width: 30vw;
+        font-size: 0.7rem;
+    } 
+    #CDL{
+        width: 20vw;
+    }
+    /*Footer*/
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    /*Header*/
+    #link a{
+        margin-right: 1vw;
+        font-size: 0.8rem;
+    }
+    header strong{
+        font-size: 1rem;
+    }
+    /*Section*/
+    #Foto{
+        height: 70vh;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    /*Footer*/
+}

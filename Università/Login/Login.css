@@ -1,0 +1,241 @@
+body{
+    margin: 0px;
+}
+.error{
+    text-align: center;
+    color: red;
+    border-color: red;
+}
+
+/*Header*/
+header{
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    height: 10vh;
+    background-color:#92A0A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 10vh;
+    width: 5vw;
+    margin-left: 1vw;
+}
+#link{
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+#link a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+#link a:hover{
+    font-weight: bolder;
+}
+
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#Foto{
+    height: 70vh;
+    width: 80vw;
+    background-image: url("../Foto/Sfondo.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#Foto::before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(0, 0, 0 , 0.5);
+}
+#Accesso{
+    height: 27vh;
+    width: 30vw;
+    background-color: rgba(255, 255, 255 , 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    z-index: 1;
+}
+#Prof_Studente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#Dati{
+    display: flex;
+    flex-direction: column;
+}
+#Dati input{
+    height: 5vh;
+    width: 15vw;
+    border-radius: 10px;
+    background: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+#Dati span{
+    font-size: 0.7rem;
+}
+#Dati1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vh;
+}
+#Accedi{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+#Accesso a{
+    color: black;
+    text-decoration: none;
+}
+#Accesso a:hover{
+    font-weight: bolder;
+}
+#Accesso p, #Accesso a{
+    text-align: center;
+}
+
+
+
+/*Footer*/
+
+
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    header{
+        font-size: 2rem;
+    }
+    header img{
+        width: 12vw;
+    }
+    #link{
+        width: 12vw;
+    }
+    #link a{
+        margin-right: 0vw;
+    }
+}
+
+/*Section*/
+@media(max-width: 1200px){
+    #Foto{
+        height: 60vh;
+        width: 90vw;
+    }
+    #Accesso{
+        height: 25vh;
+        width: 60vw;
+    }
+    #Dati input{
+        height: 3vh;
+        width: 20vw;
+    }
+    #Accedi{
+        height: 3vh;
+        width: 20vw;
+    }
+}
+/*Footer*/
+@media(max-width: 1200px){
+
+}
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Header*/
+    header{
+        height: 10vh;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    header img{
+        height: 10vh;
+        width: 10vh;
+    }
+    #link{
+        height: 10vh;
+        width: 10vh;
+    }
+    #link a{
+        margin-left: 2vw;
+        font-size: 0.7rem;
+    }
+    /*Section*/
+    #Foto{
+        height: 40vh;
+        width: 90vw;
+    }
+    #Accesso{
+        height: 20vh;
+        width: 70vw;
+    }
+    #Dati input{
+        width: 30vw;
+    }
+    #Dati span{
+        font-size: 0.4rem;
+    }
+    #Accedi{
+        width: 30vw;
+    }
+    #Accesso a , #Accesso p{
+        font-size: 0.7rem;
+    }
+    label {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    #link a{
+        margin-right: 1vw;
+    }
+
+    #Accesso{
+        height: 25vh;
+    }
+    #Dati input{
+        height: 4vh;
+    }
+    #Accedi{
+        height: 4vh;
+    }
+
+}

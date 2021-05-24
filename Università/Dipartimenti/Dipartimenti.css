@@ -1,0 +1,374 @@
+body{
+    margin:0px;
+}
+
+.Hidden{
+    display: none;
+}
+.Impossible:hover{
+    cursor: not-allowed;
+}
+.Pointer:hover{
+    cursor: pointer;
+}
+
+/*Header*/
+header{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 3rem;
+    color: white;
+    background-image: url(../Foto/Sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  #menu{
+    display: none;
+}
+#Logo img{
+    height: 15vh;
+}
+#Logo{
+    margin-top: 1vh;   
+    margin-left: 1vw; 
+}
+#links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#links{
+    margin-top: 2vh;   
+    margin-right: 2vw;
+}
+#links a:hover{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+#Principale{
+    height: 15vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Iscriviti{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+    margin-right: 2vw;
+    z-index: 1;
+}
+#Iscriviti .Button{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 10px 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#Iscriviti .Button:hover{
+    color: black;
+    font-weight:500;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    color: black;
+    position: relative;  
+}
+#Titolo{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+#Barra-ricerca{
+    height: 3vh;
+    width: 10vw;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 10vh;
+    right: 3vw;
+}
+#Contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Items{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+.Items strong{
+    font-size: 1.5rem;
+}
+.Items img , .Scopri{
+    width: 40vw;
+}
+.Items p{
+    text-align: center;
+}
+.Intestazione{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Intestazione .Preferito{
+    height: 4vh;
+    width: 4vh;
+}
+.Scopri{
+    color: black;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size:1rem;
+}
+#SalvatiPerDopo{
+    margin-top: 3vh;
+    margin-left: 3vw;
+    font-size: 1.5rem;
+}
+#Box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-size:1rem;
+}
+.ElementoSalvato{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 3vw;
+}
+.ElementoSalvato img{
+    width: 20vw;
+}
+.ElementoSalvato button{
+    margin-top: 1vh;
+    height: 3vh;
+    border: none;
+}
+
+/*Footer*/
+footer{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+}
+#TitoliDiCoda{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Contatti{
+    font-size: 1rem;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#Contatti a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+#Contatti a:hover{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    header{
+        height: 30vh;
+    }
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+    }
+    header #Principale{
+        height: 15vh;
+        font-size: 2.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 3vh;
+    }
+}
+
+/*Section*/
+@media(max-width: 1200px){
+#Barra-ricerca{
+    height: 2vh;
+    width: 15vw;
+    margin-top: 1vh;
+    top: 10vh;
+    }  
+}
+
+/*Footer*/
+@media(max-width: 1200px){
+    footer{
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #TitoliDiCoda{
+        height: 7vh;
+    }
+    #Contatti{
+        font-size: 0.8rem;
+        height: 3vh;
+    }
+    #Contatti a{
+        margin-bottom: 1vh;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Header*/
+    header #Logo img{
+        height: 13vh;
+    }
+    header #Principale{
+        font-size: 1.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 2vh;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.7rem;   
+        padding: 6px 4px; 
+    }
+    /*Section*/
+    section{
+        font-size: 0.8rem; 
+    }
+    #Titolo{
+        font-size: 1.8rem;
+        margin-top: 3vh;
+    }
+    .Intestazione{
+        width: 80vw;
+    }
+    #Barra-ricerca{
+        height: 1.5vh;
+        width: 20vw;
+        margin-top: 2.5vh;
+        top: 5vh;
+    }
+    #Contenitore{
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Items{
+        margin-top: 3vh;
+        width: 80vw;
+    }
+    .Items strong{
+        font-size: 1.2rem;
+    }
+    .Items img , .Scopri{
+        width: 80vw;
+    }
+    #SalvatiPerDopo{
+        font-size: 1rem;
+    }
+    #Box{
+        font-size:0.7rem;
+    }
+    .ElementoSalvato{
+        width: 40vw;
+    }
+    .ElementoSalvato img{
+        width: 40vw;
+    }
+    /*Footer*/
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    /*Header*/
+    header #Logo img{
+        height: 10vh;
+    }
+    header #Principale{
+        font-size: 1.2rem;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.4rem;    
+    }
+    /*Section*/
+    #Barra-ricerca{
+        top: 5.5vh;
+    }  
+    #Titolo{
+        font-size: 1.5rem;
+    }
+    /*Footer*/
+    footer{
+        font-size: 0.8rem;
+    }
+    .Contatti{
+        font-size: 0.4rem;
+    }
+}

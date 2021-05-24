@@ -1,0 +1,297 @@
+body{
+    margin:0px;
+}
+.hidden{
+    display: none;
+}
+
+/*Header*/
+header{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 3rem;
+    color: white;
+    background-image: url(../Foto/Sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  #menu{
+    display: none;
+}
+#Logo img{
+    height: 15vh;
+}
+#Logo{
+    margin-top: 1vh;   
+    margin-left: 1vw; 
+}
+#links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#links{
+    margin-top: 2vh;   
+    margin-right: 2vw;
+}
+#links a:hover{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+#Principale{
+    height: 15vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Iscriviti{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+    margin-right: 2vw;
+    z-index: 1;
+}
+#Iscriviti .Button{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 10px 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#Iscriviti .Button:hover{
+    color: black;
+    font-weight:500;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+#Mappa{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+}
+#TheMap{
+    width: 60vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#contatti{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+#contatti h1{
+    margin-left: 5vw;
+}
+#contatti span{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contatti span p{
+    margin-left: 0.5vw;
+}
+/*Footer*/
+footer{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+}
+#TitoliDiCoda{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Contatti{
+    font-size: 1rem;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#Contatti a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+#Contatti a:hover{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    header{
+        height: 30vh;
+    }
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+    }
+    header #Principale{
+        height: 15vh;
+        font-size: 2.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 3vh;
+    }
+}
+
+/*Section*/
+@media(max-width: 1200px){
+    #Mappa{
+        width: 65vw;
+        font-size: 1.5rem;
+    }
+    #TheMap{
+        width: 50vw;
+        height: 35vh;
+    }
+    #contatti{
+        width: 35vw;
+    }
+    #contatti p{
+        font-size: 0.75rem;
+    }
+}
+
+/*Footer*/
+@media(max-width: 1200px){
+    footer{
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #TitoliDiCoda{
+        height: 7vh;
+    }
+    #Contatti{
+        font-size: 0.8rem;
+        height: 3vh;
+    }
+    #Contatti a{
+        margin-bottom: 1vh;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Header*/
+    header #Logo img{
+        height: 13vh;
+    }
+    header #Principale{
+        font-size: 1.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 2vh;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.7rem;   
+        padding: 6px 4px; 
+    }
+    /*Section*/
+
+    section{
+        flex-direction: column;
+    }
+    #Mappa{
+        width: 100vw;
+        font-size: 1.3rem;
+    }
+    #TheMap{
+        width: 80vw;
+        height: 40vh;
+    }
+    #contatti{
+        width: 100vw;
+        align-items: center;
+    }
+
+    /*Footer*/
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    /*Header*/
+    header #Logo img{
+        height: 10vh;
+    }
+    header #Principale{
+        font-size: 1.2rem;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.4rem;    
+    }
+    /*Section*/
+    #Mappa{
+        width: 100vw;
+        font-size: 1rem;
+    }
+    /*Footer*/
+    footer{
+        font-size: 0.8rem;
+    }
+    .Contatti{
+        font-size: 0.4rem;
+    }
+}

@@ -1,0 +1,258 @@
+body{
+    margin:0px;
+}
+/*Header*/
+header{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 3rem;
+    color: white;
+    background-image: url(../Foto/Sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+  }
+#menu {
+    display: none;
+  }
+#Logo img{
+    height: 15vh;
+}
+#Logo{
+    margin-top: 1vh;   
+    margin-left: 1vw; 
+}
+#links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#links{
+    margin-top: 2vh;   
+    margin-right: 2vw;
+}
+#links a:hover{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+#Principale{
+    height: 15vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Iscriviti{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+    margin-right: 2vw;
+    z-index: 1;
+}
+#Iscriviti .Button{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 10px 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#Iscriviti .Button:hover{
+    color: black;
+    font-weight:500;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+#Descrizione{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3vh;
+}
+#Descrizione strong{
+    font-size: 2rem;
+}
+#Player{
+    height: 50vh;
+    width: 60vw;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+}
+
+/*Footer*/
+footer{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+}
+#TitoliDiCoda{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Contatti{
+    font-size: 1rem;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#Contatti a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+#Contatti a:hover{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*Versione per tablet/iPad */
+
+/*Header*/
+@media(max-width: 1200px){
+    header{
+        height: 30vh;
+    }
+    #links{
+        display: none;
+    }
+    #menu {
+        display: block;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+      }
+    header #Principale{
+        height: 15vh;
+        font-size: 2.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 3vh;
+    }
+}
+/*Section*/
+@media(max-width: 1200px){
+    #Descrizione strong{
+        font-size: 1.5rem;
+    }
+    #Player{
+        height: 30vh;
+        width: 80vw;
+    }
+}
+/*Footer*/
+@media(max-width: 1200px){
+    footer{
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #TitoliDiCoda{
+        height: 7vh;
+    }
+    #Contatti{
+        font-size: 0.8rem;
+        height: 3vh;
+    }
+
+    #Contatti a{
+        margin-bottom: 1vh;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    header #Logo img{
+        height: 13vh;
+    }
+    header #Principale{
+        font-size: 1.5rem;
+    }
+    header #Iscriviti{
+        margin-bottom: 2vh;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.7rem;   
+        padding: 6px 4px; 
+    }
+    #Descrizione strong{
+        font-size: 1.3rem;
+    }
+    #Descrizione p{
+        font-size: 0.7rem;
+    }
+    #Player{
+        width: 90vw;
+    }
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    header #Logo img{
+        height: 10vh;
+    }
+    header #Principale{
+        font-size: 1.2rem;
+    }
+    header #Iscriviti .Button{
+        font-size: 0.4rem;    
+    }
+    #Descrizione strong{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+    .Contatti{
+        font-size: 0.4rem;
+    }
+}
