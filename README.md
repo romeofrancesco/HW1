@@ -1,5 +1,6 @@
 ### HW1: Entire website
 The HW1 represents the entire website, the website is divided into two parts, one is dedicated to visitors and the other one is dedicated to users(students , tutors and teachers).
+The file "universit_.sql" is the database export that I used
 
 ## Disposal
 This HW1 is divided into so many folders, each of them contains the main files for each page of the website.
